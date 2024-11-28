@@ -24,8 +24,8 @@ class Widget(QMainWindow):
         if self.paint:
             self.qp.begin(self)
             r, g, b, size = RColorandSize()
-            self.qp.setBrush(QColor('yellow'))
-            pos = QPointF(100.0, 100.0)
+            self.qp.setBrush(QColor(r, g, b))
+            pos = QPointF(150.0, 150.0)
             self.qp.drawEllipse(pos, size, size)
             self.paint = False
             self.qp.end()
