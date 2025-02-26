@@ -38,11 +38,11 @@ class MapApp(QMainWindow):
         self.layout.addWidget(self.map_label)
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key.Key_PageUp:
+        if event.key() == Qt.Key.Key_Q:
             self.zoom = min(self.zoom + 1, 17)
             self.update_zoom_input()
             self.show_map()
-        elif event.key() == Qt.Key.Key_PageDown:
+        elif event.key() == Qt.Key.Key_E:
             self.zoom = max(self.zoom - 1, 1)
             self.update_zoom_input()
             self.show_map()
